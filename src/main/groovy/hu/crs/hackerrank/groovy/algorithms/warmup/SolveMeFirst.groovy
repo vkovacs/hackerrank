@@ -1,4 +1,4 @@
-package hu.crs.hackerrank.algorithms.warmup
+package hu.crs.hackerrank.groovy.algorithms.warmup
 
 //https://www.hackerrank.com/challenges/solve-me-first
 

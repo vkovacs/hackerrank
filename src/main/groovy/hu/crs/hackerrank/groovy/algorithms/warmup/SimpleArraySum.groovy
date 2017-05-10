@@ -1,12 +1,9 @@
-package hu.crs.hackerrank.algorithms.warmup
+package hu.crs.hackerrank.groovy.algorithms.warmup
 
+//https://www.hackerrank.com/challenges/simple-array-sum
 
 def sum(String[] strings) {
-    Integer sum = 0;
-    for (String stringNumber : strings) {
-        sum += stringNumber.toInteger()
-    }
-    sum
+    strings.collect {it.toInteger()}.sum()
 }
 
 BufferedReader br = new BufferedReader(new InputStreamReader(System.in))
@@ -15,5 +12,5 @@ String numbersString = br.readLine()
 String[] splittedNumbers = numbersString.split(" ")
 
 def result = sum(splittedNumbers)
-assert result == 9
-resutl
+println result
+result
