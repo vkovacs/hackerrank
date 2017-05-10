@@ -1,6 +1,8 @@
 package hu.crs.hackerrank.groovy.algorithms.warmup
 
-//https://www.hackerrank.com/challenges/simple-array-sum
+/**
+ * https://www.hackerrank.com/challenges/simple-array-sum
+ */
 
 def sum(String[] strings) {
     strings.collect {it.toInteger()}.sum()

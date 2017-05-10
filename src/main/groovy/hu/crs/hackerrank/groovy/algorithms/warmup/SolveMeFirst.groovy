@@ -1,6 +1,8 @@
 package hu.crs.hackerrank.groovy.algorithms.warmup
 
-//https://www.hackerrank.com/challenges/solve-me-first
+/**
+ * https://www.hackerrank.com/challenges/solve-me-first
+ */
 
 def solveMeFirst(a,b) {
     a+b
