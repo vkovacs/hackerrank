@@ -1,5 +1,9 @@
 package hu.crs.hackerrank.groovy.algorithms.warmup
 
+/**
+ * https://www.hackerrank.com/challenges/staircase
+ */
+
 BufferedReader br = new BufferedReader(new InputStreamReader(System.in))
 def depth = br.readLine().toInteger()
 

@@ -3,6 +3,10 @@ package hu.crs.hackerrank.groovy.algorithms.warmup
 import java.text.DecimalFormat
 import java.text.DecimalFormatSymbols
 
+/**
+ * https://www.hackerrank.com/challenges/plus-minus
+ */
+
 BufferedReader br = new BufferedReader(new InputStreamReader(System.in))
 BigInteger count = br.readLine().toBigInteger()
 List<BigInteger> bigIntegers = br.readLine().split(" ").collect { it.toBigInteger() }
