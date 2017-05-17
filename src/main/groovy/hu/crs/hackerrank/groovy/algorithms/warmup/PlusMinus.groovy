@@ -14,17 +14,19 @@ List<BigInteger> bigIntegers = br.readLine().split(" ").collect { it.toBigIntege
 DecimalFormatSymbols decimalSymbols = DecimalFormatSymbols.getInstance();
 decimalSymbols.setDecimalSeparator('.' as char)
 
-println new DecimalFormat("0.000000", decimalSymbols).format(bigIntegers
+DecimalFormat decimalFormat = new DecimalFormat("0.000000", decimalSymbols)
+
+println decimalFormat.format(bigIntegers
         .count { it > 0 }
         .collect { it / count }
         .get(0))
 
-println new DecimalFormat("0.000000", decimalSymbols).format(bigIntegers
+println decimalFormat.format(bigIntegers
         .count { it < 0 }
         .collect { it / count }
         .get(0))
 
-println new DecimalFormat("0.000000", decimalSymbols).format(bigIntegers
+println decimalFormat.format(bigIntegers
         .count { it == 0 }
         .collect { it / count }
         .get(0))
